@@ -109,7 +109,7 @@ for i, doc in enumerate(results, 1):
     print(doc.page_content)  """
 
 # 5
-from langchain_community.document_loaders import PyPDFLoader
+
 from src.loader import load_pdf
 from src.chunker import create_chunks
 from src.embeddings import get_embeddings
