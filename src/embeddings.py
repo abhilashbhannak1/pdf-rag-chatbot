@@ -8,3 +8,13 @@ def get_embeddings():
     )
 
     return embeddings
+if __name__ == "__main__":
+    embeddings = get_embeddings()
+
+    text = "Python is a programming language."
+
+    vector = embeddings.embed_query(text)
+
+    print("Text:", text)
+    print("Vector Length:", len(vector))
+    print("First 10 Values:", vector[:10])
